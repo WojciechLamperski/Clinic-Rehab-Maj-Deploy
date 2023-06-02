@@ -35,4 +35,4 @@ app.get("*", (req, res) => {
   res.status(404).redirect("/", { page: "home" });
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
